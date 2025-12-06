@@ -7,9 +7,26 @@ h1{
 .names{
     text-align: center;
     font-size: 70px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .container{
     display: flex;
-    gap: 270px;
+    gap: 200px;
+}
+body{
+    background-color: black;
+    /* background-image : url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpFeYNUSs5fXWKfTVcyIwxiCtb7Hm4Mcbo-g&s"); */
+}
+
+#Rihan{
+    height: 10cm;
+    width: 8cm;
+    border-radius: 180px;
+}
+#Anitha{
+    height: 10cm;
+    width: 8cm;
+    border-radius: 180px;
 }

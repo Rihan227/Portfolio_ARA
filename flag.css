@@ -1,0 +1,101 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Flag container*/
+.flag {
+  width: min(90vw, 900px);
+  aspect-ratio: 9 / 6.5;
+  margin: 60px auto;
+  position: relative;
+  overflow: hidden;
+}
+/* GREEN + RED diagonal split */
+.flag::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, #009739 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, #ce1126 50%);
+}
+/* YELLOW diagonal band*/
+.band {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    145deg,
+    transparent 40%,
+    #fcd116 40%,
+    #fcd116 65%,
+    transparent 65%
+  );
+}
+/* BLACK band (inside yellow & centered) */
+.band::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    145deg,
+    transparent 44%,
+    #000000 44%,
+    #000000 60%,
+    transparent 60%
+  );
+}
+/* Stars inside black band */
+.star {
+  position: absolute;
+  width: 20%;
+  aspect-ratio: 1;
+  background: white;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%,
+    68% 57%, 79% 91%, 50% 70%,
+    21% 91%, 32% 57%, 2% 35%,
+    39% 35%
+  );
+  transform: rotate(-38deg);
+}
+/* STAR 1 */
+.star1 {
+  top: 28%;
+  left: 60%;
+}
+/* STAR 2 */
+.star2 {
+  bottom: 26%;
+  left: 32%;
+}
+/* MOBILE FIX */
+@media (max-width: 480px) {
+  .flag {
+    width: 95vw;
+    margin: 30px auto;
+  }
+
+  .star {
+    width: 14%;
+  }
+}
+/* TABLET FIX */
+@media (min-width: 481px) and (max-width: 768px) {
+  .flag {
+    width: 80vw;
+  }
+  .star {
+    width: 13%;
+  }
+}
+/* LARGE SCREEN FIX */
+@media (min-width: 1200px) {
+  .flag {
+    width: 70vw;
+  }
+  .star {
+    width: 13%;
+  }
+}
