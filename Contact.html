@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact US</title>
+        <meta name="viewport" content="width=device-width" />
+<dialog open aria-labelledby="dialogid">
+  <style>
+    body {
+  background:rgb(14, 101, 164);
+  font-family: sans-serif;
+}
+[aria-label="close"] {
+  float: right;
+  appearance: none;
+  border-radius: 5rem;
+  margin: 5em;
+}
+p {
+  margin-top: 5em;
+}
+h2 + p {
+  margin-top: 5em;
+}
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+  </style>
+  <form action="thankyou.php">
+    <button type="submit" aria-label="close" formmethod="dialog" formnovalidate>X</button>
+    <h2 id="dialogid">Contact US</h2>
+    <p>All fields are required</p>
+    <p>
+       <label>Name: 
+         <input type="text" name="name" required />
+      </label>
+    </p>
+    <p>
+      <label>Company: 
+        <input type="text" name="Company" required />
+       </label>
+    </p>
+    <p>
+      <label>Email
+         <input type="email" name="Email" required />
+      </label>
+    </p>
+    <p>
+      <label>Mobile number
+         <input type="tel" min="0" max="10" name="Mobile" required />
+      </label>
+    </p>
+      <button type="submit" formmethod="post">Submit</button>
+    </p>
+  </form>
+</dialog>
+    </head>
+    <body>
+    </body>
+</html>

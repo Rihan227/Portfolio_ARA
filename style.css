@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    color:burlywood;
+    font-size: 80px;
+}
+
+.names{
+    text-align: center;
+    font-size: 70px;
+}
+
+.container{
+    display: flex;
+    gap: 270px;
+}
