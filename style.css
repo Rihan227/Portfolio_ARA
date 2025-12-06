@@ -1,19 +1,22 @@
+/* indexpage */
 h1{
     text-align: center;
     color:black;
     font-size: 80px;
 }
-
 .names{
     text-align: center;
     font-size: 70px;
     display: flex;
     justify-content: space-around;
 }
-
-.container{
-    display: flex;
-    gap: 200px;
+.rihan_bio, .anitha_bio, .athul_bio {
+    height: 500px;
+    width: 400px;
+    padding: 60px 0;
+    margin: 20px 0;
+    /* border: 2px black solid; */
+    font-size: 30px;
 }
 body{
     background-color:lightcyan;
@@ -24,7 +27,6 @@ body{
     height: 100vh;
     width: 100vw;
 }
-
 #Rihan{
     height: 8cm;
     width: 6cm;
@@ -41,3 +43,14 @@ body{
     border-radius: 180px;
 }
 
+/* Rihanpage */
+.container{
+    display: flex;
+    gap: 70px;
+}
+.column{
+    background-color: grey;
+    height: 60vh;
+    width:50vw;
+    padding: 0 0 0 20px;
+}
