@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login application page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <div class="login-box">
+            <form action="">
+            <h2>Login</h2>
+                <div class="input-box">
+                    <span class="icon"><img src="user-icon.png" alt="user icon" class="icon"></span>
+                    <input type="text"  required>
+                    <label>Username</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><img src="lock-icon.png" alt="user icon" class="icon"></span>
+                    <input type="password"  required minlength="8" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                
+                <button type="submit">Login</button>
+
+                <div class="register-link">
+                <p>Don't have an account? <a href="#" id="register">Register</a></p> 
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

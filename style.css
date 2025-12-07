@@ -1,12 +1,22 @@
 /* indexpage */
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding-top: 40px;
+}
+
 h1{
     text-align: center;
     color:black;
     font-size: 80px;
 }
-h2{
-    text-align: center;
+
+.column h2,h3{
+    display: flex;
+    justify-content: center;
 }
+
 .names{
     text-align: center;
     font-size: 70px;
@@ -30,20 +40,15 @@ body{
     height: 100vh;
     width: 100vw;
 }
-#Rihan{
-    height: 8cm;
-    width: 6cm;
-    border-radius: 180px;
+.profile{
+    height: 20rem;
+    width: 15rem;
+    border-radius: 100px;
+    box-shadow: 0px 0px 30px rgb(70, 183, 160);
 }
-#Anitha{
-    height: 8cm;
-    width: 6cm;
-    border-radius: 180px;
-}
-#Athul{
-    height: 8cm;
-    width: 6cm;
-    border-radius: 180px;
+
+.profile img:hover{
+    transform: scale(1.2);
 }
 
 /* Rihanpage */
@@ -52,29 +57,27 @@ body{
     gap: 70px;
 }
 .column{
-    background-color: grey;
-    height: 60vh;
-    width:50vw;
-    padding: 20px 20px 20px 20px;
+    height: 70vh;
+    width: 50vw;
+    padding: 20px;
+    margin-top: 25px;
+    box-shadow: 0 0 15px black;
+    border-radius: 50px;
 }
-#icon {
+
+.column p{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icons {
     width: 42px; 
     height: 42px;
     border: none; 
     cursor: pointer; 
     border-radius: 50%;
-}
-#brew {
-    width: 42px; 
-    height: 42px;
-    border: none; 
-    cursor: pointer;
-    border-radius: 50%;
-
+    display: flex;
+    gap: 10px;
 }
 
-.container img {
-    max-width: 100%;
-    width: auto;
-}
 
