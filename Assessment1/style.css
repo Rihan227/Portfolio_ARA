@@ -1,0 +1,73 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a {
+    width: 50%;
+    height: 80%;
+    background-color: lightgray;
+    border: 2px;
+
+
+}
+
+.header {
+    width: 100%;
+    height: 20%;
+    border: 2px;
+    text-align: center;
+}
+
+.details {
+    width: 100%;
+    height: 30%;
+    padding-left: 20px;
+    display: flex;
+
+}
+
+.left-detail {
+    width: 20%;
+    height: 100%;
+    padding-top: 0px;
+}
+
+.right-detail {
+    width: 40%;
+    height: 100%;
+}
+
+#name {
+    height: 25px;
+    width: 200px;
+}
+
+#place {
+    width: 200px;
+    height: 25px;
+
+}
+
+.Satisfaction {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    padding-left: 20px;
+
+}
+
+.left-satis {
+    height: 100%;
+    width: 5%;
+    padding-top: 20px;
+}
+
+.right-satis {
+    height: 100%;
+    width: 95%;
+}

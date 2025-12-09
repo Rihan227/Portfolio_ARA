@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ukflag</title>
+        <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #eee;
+            height: 600px;
+            margin: 0;
+        }   
+        .flag {
+            width: 90vw;
+            max-width:600px;
+            aspect-ratio:3/2;
+            background-color:#012169;
+            position: relative;
+            overflow: hidden;
+            
+        }    
+        .white-vertical,
+        .white-horizontal {
+            position: absolute;
+            background-color:#ffffff;
+            
+        }
+        .white-vertical {
+            width: 18%;
+            height: 100%;
+            left: 41%;
+   
+        }
+        .white-horizontal {
+            width: 100%;
+            height: 18%;
+            top: 41%;
+            
+        }   
+        .red-vertical,
+        .red-horizontal {
+            position: absolute;
+            background-color: #C8102E;
+            
+        }  
+        .red-vertical {
+            width: 10%;
+            height: 100%;
+            left: 45%;
+        }
+        
+        .red-horizontal {
+            width: 100%;
+            height: 10%;
+            top: 45%;
+            /* transform: rotate(35deg); */
+        }
+        .diag {
+            position: absolute;
+            width: 200%;
+            height: 12%;
+            background-color:#012169;
+        
+        }
+        .diag.tl { top: 0; left: 0; }
+        .diag.br { bottom: 0; right: 0; }
+        .diag.tr { top: 0; right: 0; }
+        .diag.bl { bottom: 0; left: 0; } 
+        
+        /* Red diagonals */
+        .diag-red {
+            position: absolute;
+            width: 200%;
+            height: 6%;
+            background-color:#C8102E;
+            transform-origin:left;
+      
+        }
+        /* Red diagonals position */
+        /* .diag.tl {top: 0; left: -50; transform: rotate(35deg);} */
+        .diag-red.tl { top: 0; left: -50; transform: rotate(35deg); }
+            
+        /* .diag.tr { top: 0; right: -50%; transform: rotate(-35deg); } */
+        .diag-red.tr { top: 0; right: -50; transform: rotate(-35deg); } 
+
+        /* .diag.bl { bottom: 0; left: -50%; transform: rotate(-35deg); } */
+        .diag-red.bl { bottom: 0; left:-50 ; transform: rotate(-35deg); }
+            
+        /* .diag.br { bottom: 0; right: -50%; transform: rotate(35deg); } */
+        .diag-red.br { bottom: 0; right: -50; transform: rotate(35deg); }       
+       
+        </style>
+    </head>
+        
+<!-- html -->
+<div class="flag">
+        
+<!-- Diagonals (white) -->
+<div class="diag tl"></div>
+<div class="diag tr"></div>
+<div class="diag bl"></div>
+<div class="diag br"></div>
+        
+<!-- Red diagonals -->
+<div class="diag-red tl"></div>
+<div class="diag-red tr"></div>
+<div class="diag-red bl"></div>
+<div class="diag-red br"></div>
+
+<!-- white diagonals -->
+<!-- <div class="diag-white tl"></div>
+<div class="diag-white tr"></div>
+<div class="diag-white bl"></div>
+<div class="diag-white br"></div> -->
+        
+<!-- whit cross -->
+<div class="white-vertical"></div>
+<div class="white-horizontal"></div>
+        
+<!-- red cross -->
+<div class="red-vertical"></div>
+<div class="red-horizontal"></div>
+</div>
+</body>   
+</html>
