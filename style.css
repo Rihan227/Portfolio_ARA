@@ -45,7 +45,8 @@ body{
     height: 20rem;
     width: 20rem;
     border-radius: 200px;
-    box-shadow: 0px 0px 30px rgb(70, 183, 160);
+    box-shadow: 0px 0px 30px rgb(178, 208, 236);
+    
 }
 
 .profile img:hover{
@@ -66,7 +67,16 @@ body{
     box-shadow: 0 0 15px black;
     border-radius: 50px;
 }
+.column .html{
+    width: 32px;
+    height: 22px;
+    object-fit:contain;
+}
 
+.tools {
+    display: flex;
+    gap: 10px;
+}
 .column p{
     display: flex;
     justify-content: flex-start;
