@@ -9,7 +9,8 @@ header {
 h1{
     text-align: center;
     color:black;
-    font-size: 80px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .column h2,h3{
@@ -32,7 +33,7 @@ h1{
     font-size: 30px;
 }
 body{
-    background-color:lightcyan;
+    background-color:white;
     /* background-image : url("https://img95.lovepik.com/photo/40101/9731.gif_wh860.gif"); */
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,9 +43,10 @@ body{
 }
 .profile{
     height: 20rem;
-    width: 15rem;
-    border-radius: 100px;
-    box-shadow: 0px 0px 30px rgb(70, 183, 160);
+    width: 20rem;
+    border-radius: 200px;
+    box-shadow: 0px 0px 30px rgb(178, 208, 236);
+    
 }
 
 .profile img:hover{
@@ -52,34 +54,109 @@ body{
 }
 
 /* Rihanpage */
+.head-container{
+    /* background-color:rgb(22, 117, 181); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.head-logo{
+    width: 10px;
+}
+h5{
+    text-align: center;
+    color:black;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.head-title{
+    margin-left: 30%;
+    margin-right: auto; 
+    text-align: center;
+}
 .container{
     display: flex;
     gap: 70px;
 }
-.column{
+
+.column {
     height: 70vh;
     width: 50vw;
     padding: 20px;
-    margin-top: 25px;
     box-shadow: 0 0 15px black;
     border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.image-section{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-section img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.content-section{
+    /* display: flex; */
+    /* background-color: aqua; */
+    flex : 1;
+    padding-top: 10px;
+    border-color: aquamarine;
+}
+.column .html{
+    width: 32px;
+    height: 22px;
+    object-fit:contain;
 }
 
+.tools {
+    display: flex;
+    gap: 10px;
+}
 .column p{
     display: flex;
     justify-content: flex-start;
 }
 
 .icons {
-    width: 42px; 
+    width: auto; 
     height: 42px;
     border: none; 
     cursor: pointer; 
     border-radius: 50%;
-    display: flex;
+    display:flex;
+    justify-content:center;
+    margin: 20px;
+
     gap: 10px;
 }
 .container img {
     max-width: 100%;
     width: auto;
+}
+.logo{
+    height:15%;
+    width:auto;
+}
+h2{
+    font-size: larger;
+    text-align: center;
+    
+}
+.button1{
+    display: flex;
+    justify-content: center;
+
+}
+.tools{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
